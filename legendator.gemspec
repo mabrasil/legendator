@@ -2,7 +2,7 @@ require File.expand_path("../src/version", __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name        = 'legendator'
-  gem.version     = Legendator::VERSION
+  gem.version     = LegendatorVersion::VERSION
   gem.date        = Date.today.to_s
   gem.licenses    = ['MIT']
   gem.homepage    = 'https://github.com/pogist/legendator'
