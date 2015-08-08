@@ -4,7 +4,6 @@ module Legendator
 			@file = ::File.open(::File.expand_path(file),"r")
 			#fix the file encode to remove the InvalidArgument error
 			@file_content = IO.read(@file).force_encoding("ISO-8859-1").encode("utf-8",replace: nil)
-			#defines the subtitle's regex
 			@subtitle_regex =  /(\d+)\s+(\d+:\d+:\d+,\d+)\s+-->\s+(\d+:\d+:\d+,\d+)\s+(.+)/
 		end
 
